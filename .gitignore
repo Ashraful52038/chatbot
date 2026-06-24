@@ -1,0 +1,43 @@
+# Python Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# API keys (গোপন তথ্য)
+.env
+*.key
+*.pem
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
