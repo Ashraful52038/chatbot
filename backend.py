@@ -1,3 +1,5 @@
+from pyexpat.errors import messages
+
 from langgraph.graph import StateGraph, START, END
 from typing import TypedDict, Annotated
 from langchain_core.messages import BaseMessage, HumanMessage
@@ -50,3 +52,12 @@ initial_state = {
 chatbot.invoke(initial_state, config=config)['messages'][-1].content
 
 chatbot.get_state(config=config)
+
+# for message_chunk, metadata in chatbot.stream(
+#     {'messages': [HumanMessage(content="Hello, how are you?")]},
+#     config=config,
+#     stream_mode='messages'
+# ):
+#     if message_chunk.content:
+#             print(message_chunk.content, end=" ", flush=True)
+
